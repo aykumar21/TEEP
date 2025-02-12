@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="flood_simulation">
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Flood hazard model -->
+    <include>
+      <uri>model://flood_zone</uri>
+    </include>
+
+    <!-- Lighting and other simulation properties -->
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>0 0 0</magnetic_field>
+    <wind>0 0 0</wind>
+  </world>
+</sdf>

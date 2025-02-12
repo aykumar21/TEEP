@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="flood_simulation">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Simulated Flood Water -->
+    <model name="flood_water">
+      <static>true</static>
+      <link name="water_surface">
+        <visual name="water_visual">
+          <geometry>
+            <plane>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Blue</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Buoyancy Plugin -->
+    <plugin name="freefloating_gazebo_fluid" filename="libfreefloating_gazebo_fluid.so">
+      <descriptionParam>robot_description</descriptionParam>
+      <fluidTopic>current</fluidTopic>
+      <alwaysOn>true</alwaysOn>
+      <surface>0 0 1</surface>  <!-- Adjust water height -->
+      <updateRate>0.001</updateRate>
+    </plugin>
+  </world>
+</sdf>
+

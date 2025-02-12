@@ -1,0 +1,16 @@
+# ROS 2 build folders
+build/
+install/
+log/
+
+# VSCode settings
+.vscode/
+
+# Python virtual environments
+.venv/
+
+# CMake and ROS2 specific files
+CMakeCache.txt
+CMakeFiles/
+.catkin_workspace
+.rosinstall
