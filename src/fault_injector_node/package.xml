@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>fault_injector_node</name>
+  <version>0.0.1</version>
+  <description>Fault injection node to simulate MAVLink timeout and OFFBOARD drop</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>mavros_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+</package>
+ 

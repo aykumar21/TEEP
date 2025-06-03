@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>flood_detection_segmentation</name>
+  <version>0.0.1</version>
+  <description>Flood detection segmentation using a drone camera feed.</description>
+  <maintainer email="211230013@nitdelhi.ac.in">Ayush Kumar</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
